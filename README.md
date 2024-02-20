@@ -85,6 +85,7 @@ iptables-restore -n <<-EOF
 -A TRANSOCKS -d 240.0.0.0/4 -j RETURN
 -A TRANSOCKS -p tcp -j REDIRECT --to-ports 1081
 COMMIT
+
 ```
 
 - run shell  script to update iptables
@@ -95,11 +96,8 @@ COMMIT
 
   > iptables-save -c | grep -v "TRANSOCKS" | iptables-restore -c
 
-   
 
-##　3. Config DNS over TLS on OpenWrt.
-
-> https://openwrt.org/docs/guide-user/services/dns/dot_unbound
+## 3.Config DNS over TLS on OpenWrt.
 
 - Replacing dnsmasq with odhcpd and Unbound
 
