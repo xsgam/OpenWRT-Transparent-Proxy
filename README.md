@@ -177,10 +177,6 @@ COMMIT
   root@OpenWrt:~# nslookup openwrt.org localhost
   ```
 
-  Check your DNS provider and test DNSSEC validation.
-
-  - https://dnsleaktest.com
-  - https://dnssec-tools.org/test
 
 - Test PC
 
@@ -192,7 +188,11 @@ COMMIT
 
   - start Firefox/Chrome , visit some website。
 
-    
+  - Check your DNS provider and test DNSSEC validation.
+
+    - https://dnsleaktest.com
+    - https://dnssec-tools.org/test
+
 
 # Troubleshooting
 
